@@ -1,0 +1,280 @@
+/* --------------------------------- */
+/* Kijiji Home page                  */
+/* --------------------------------- */
+
+/* Make category names easier to read */
+span.cat-name-link {
+    font-size: 125%;
+}
+
+/* Hide recommended and other ads on Kijiji Home page */
+.top-links {
+    display: none;
+}
+div[data-fes-id="recommendations"] {
+    display: none;
+}
+/* Does not work using display:none */
+div[data-fes-id="HPGallery"] {
+    display: none;
+}
+
+/* Fix top border of Categories on Home page */
+div #Categories {
+    border-top: none;
+}
+
+/* --------------------------------- */
+/* Kijiji Ad Listing                 */
+/* --------------------------------- */
+
+/* Search Results Page Enhancements */
+@media (min-width: 841px) {
+    h2.icon-link.srp-top {
+        display: block !important; 
+    }
+    div.breadcrumb {
+        position: absolute !important;
+        height: 55px !important;
+        border-bottom-width: 0px !important;
+        margin-top: 20px;
+        padding-top: 0px;
+        padding-left: 0px;
+        line-height: 17px;
+        background-color: transparent;
+    }
+}
+
+/* Adjust the Current Matches Content location */
+.container-primary .content {
+    padding: 15px 7px !important;
+}
+
+/* Hide SRP Popular searches tag cloud */
+#MainContainer > ul.more-searches {
+    display: none;
+}
+
+/* Hide SRP bottom bar with the post your ad here link */
+.srp-bottom-links, .cat-post {
+    display: none;
+}
+
+/* Fix for the [Post to Category] button alignment */
+div > h2.icon-link.srp-top {
+    margin-top: 0px;
+}
+
+/* Restyle the [Post to Category] button */
+h2.icon-link.srp-top > a[data-btn-loc="srp-top"] {
+    width: 0px;
+    height: 45px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#btnPostToCat {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Hide SRP extra bar with Kijiji Alerts registration button */
+div.extra-bar, div.top-space {
+    display: none;
+}
+
+/* IMPORTANT - This displays the Sign In form for Kijiji that is blocked by div.top-space */
+div.layout-0.top-space.bottom-space {
+    display: block;
+}
+
+/* Update the top-bar style */
+div.showing {
+    font-size: 14px;
+}
+
+/* bottom bar that hold pagination */
+.bottom-bar {
+  height: auto !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+/* Update the pagination links  */
+.pagination {
+  padding-top: 10px !important;
+  padding-bottom: 7px !important;
+  font-size: 145% !important;
+  line-height: 23px !important;
+  height: auto !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+div.bottom-bar {
+    height: 16px;
+}
+div.pagination > span.selected, div#PaginationLinks > span.selected {
+    color: #83b54f;
+    font-size: 145% !important;
+    line-height: 26px !important;
+}
+
+/* Hide the RSS link in the pagination area */
+.pagination a.rss-link {
+    display: none;
+}
+
+div.regular-ad {
+    display: block;
+}
+
+/* --------------------------------- */
+/* Kijiji Ad Detail                  */
+/* --------------------------------- */
+
+/* Kijiji Ad Details page Image Enhancements */
+div#btnRotateImage {
+    font-size: 125%;
+}
+#divImageRotate {
+    color: rgb(255, 255, 255);
+    cursor:auto;
+    display:block;
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:16px;
+    height:30px;
+    margin-top: 10px;
+    line-height:30px;
+    text-align:center;
+    text-size-adjust:100%;
+    user-select:none;
+    white-space:nowrap;
+    width:100%;
+    -webkit-font-smoothing:antialiased;
+}
+div.mfp-figure > figure {
+    height: 100%;
+    vertical-align: middle;
+    line-height: 541px;
+}
+
+/* Hide while we replacing the [Return to Results] text link with a button */
+ul.ad-nav-links.vip-ad-nav > li.back-to-results {
+    /*visibility: hidden;*/
+    height: 33px;
+}
+
+/* Hide while we replacing the [Prev Ad] and [Next Ad] text links with buttons */
+#AdNavPrevious, #AdNavNext {
+    display: none;
+}
+
+/* Tidy up the Contact Poster form */
+header#SeparateContactHeader {
+    padding-bottom: 0px;
+}
+button#BuyNowLink {
+    font-size: 14px;
+}
+
+/* Prettify the [Buy From Seller] button */
+button#BuyNowLink {
+    font-size: 14px;
+}
+
+/* Prettify the [Send Email] button */
+button#ContactPosterButton, button#ContactPosterButton > a, a#ContactPosterButton > button {
+    font-size: 14px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 100%;    
+}
+
+/* --------------------------------- */
+/* Lets Make Kijiji Great Again      */
+/* --------------------------------- */
+
+/* Adjust the global page header size */
+div[class^="logoBar"] {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    border-bottom-width: 0px !important;
+}
+
+/* Adjust the search bar size */
+div[class^="searchBar"] {
+    padding: 0px !important;
+}
+form[class^="searchBar"] {
+    padding-top: 20px !important;
+    padding-left: 20px !important;
+    padding-bottom: 20px !important;
+    padding-right: 20px !important;
+}
+
+/* Hide global page footer links and badges */
+#FooterLinkColumns, #FooterBadgeColumns {
+    display: none;
+}
+
+/* Hide page header ads */
+.leaderboard {
+    display: none;
+}
+
+/* Hide the social sharing bar and become anti-social */
+#ShareLinkBar {
+    visibility: hidden;
+}
+
+/* Hide sponsors and sponsored ads */
+#ImageSponsors, .sponsored-ad-container {
+    display: none;
+}
+
+/* Hide skyscrapper ads, and both the left and right side page banner ads */
+/* #SkyscraperSRP, #SkyscraperCheck */
+.skyscraper, .banner {
+    display: none;
+}
+
+/* Hide Adsense and sponsored ads */
+.adsense-top-bar, .adsense-container, .adsense-bottom-bar {
+    display: none;
+}
+
+/* Hide top ads */
+.top-feature {
+    display: none;
+}
+.top-ads-top-bar, .top-ads-bottom-bar {
+    display: none;
+}
+/* Hide in-line ads */
+#InlineBanner {
+    display: none;
+}
+
+/* Hide Kijiji Safety Warning */
+#R2SSafetyMessage {
+    display: none;
+}
+
+/* Hide 3rd party ads */
+.third-party {
+    display: none;
+}
+
+/* Hide eBay ads */
+div[data-fes-id^="Treebay"] {
+    display: none;
+}
+
+/* --------------------------------- */
+/* Styles for Kijii Auto             */
+/* --------------------------------- */
+.tabs li.image {
+    display: none;
+}
+#tab-2 {
+    display: block;
+}

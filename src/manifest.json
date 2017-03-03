@@ -1,0 +1,60 @@
+{
+  "manifest_version": 2,
+  "name": "Kijiji+ Site Enhancer",
+  "version": "1.0.0",
+  "description": "Best browsing experience for Kijiji ever! Image rotation, ad-blocking, privacy protection, infinity-scrolling, in-page map preview and more.",
+  "author": "André Fortin",
+  "default_locale": "en",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "webRequest", 
+    "webRequestBlocking",
+    "webNavigation",
+    "http://*/*", "https://*/*",
+    "https://maps.googleapis.com/maps/api/*"
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+  "browser_action": {
+    "default_icon": "icons/icon32.png"
+  },
+  "content_scripts": [
+    {
+      "run_at": "document_start",
+      "matches": ["*://www.kijiji.ca/*"],
+      "css" : ["css/style.css"]
+    },
+    {
+      "run_at": "document_end",
+      "matches": ["*://www.kijiji.ca/*"],
+      "js": [
+        "js/jquery-3.1.1.min.js", // Need to load this before bootstrap.min.js
+        "js/bootstrap.min.js",
+        "js/jquery.infinitescroll-2.2.1.js",
+        "js/captcha-solver.js",
+        "js/infinitescroll.js",
+        "js/mapify.js",
+        "js/messaging.js",
+        "js/rotation.js",
+        "js/toggle-elements.js",
+        "js/utils.js",
+        "js/kijiji-plus.js"
+      ],
+      "css": ["css/bootstrap.min.css"]
+    }
+  ],
+  "options_page": "options.html",
+  "web_accessible_resources": [
+    "kijiji/js/filter.js",
+    "kijiji/css/style.css",
+    "img/*"
+  ]
+}

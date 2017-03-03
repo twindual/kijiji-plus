@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Kijiji+ Options</title>
+  <meta name="description" content="Kijiji+ Options">
+  <meta name="author" content="André Fortin">
+  <link rel="stylesheet" href="css/chrome-bootstrap.css">
+</head>
+<body class="chrome-bootstrap">
+
+<style>
+#about-container {
+  align-items: center;
+  color: rgb(48, 57, 66);
+  cursor: default;
+  direction: ltr;
+  display: flex;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 12px;
+  height: 50.1719px;
+  margin-top: 10px;
+  user-select: text;
+  width: 576px;
+}
+#product-logo {
+  color: rgb(48, 57, 66);
+  cursor: default;
+  direction: ltr;
+  display: block;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 12px;
+  height: 32px;
+  user-select: text;
+  width: 32px;
+}
+#product-description {
+  color: rgb(48, 57, 66);
+  cursor: default;
+  direction: ltr;
+  display: block;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 12px;
+  height: 50.1719px;
+  user-select: text;
+  width: 284.297px;
+  -webkit-margin-start: 10px;
+}
+h2 {
+  color: rgb(48, 57, 66);
+  cursor: default;
+  direction: ltr;
+  display: block;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-size: 15.6px;
+  font-weight: normal;
+  height: 15px;
+  line-height: 15.6px;
+  margin-bottom: 6.24px;
+  user-select: none;
+  width: 284.297px;
+  -webkit-margin-after: 6.24px;
+  -webkit-margin-before: 12.948px;
+  -webkit-margin-end: 0px;
+  -webkit-margin-start: 0px;
+}
+</style>  
+
+  <div class="frame">
+    <div class="navigation">
+      <h1><a href="#">Kijiji+</a></h1>
+      <ul class="menu">
+        <li class="selected">
+          <a href="#forms">Settings</a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li>
+          <a href="#about">About</a>
+        </li>
+      </ul>
+    </div>
+    <div class="mainview view">
+      <div id="forms" class="selected">
+        
+        <header>
+          <h1><small>Site Wide Enhancements <em id="status" style="color: #83b54f;">&nbsp;</em></small></h1>
+        </header>
+        <div class="content">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="filterKijijiFooterLinks" id="filterKijijiFooterLinks" value="1">
+              <span>Hide Footer Links</span>
+            </label>
+          </div>
+        </div>
+        
+        <header>
+          <h1><small>Ad Listings Enhancements <em id="status" style="color: #83b54f;">&nbsp;</em></small></h1>
+        </header>
+        <div class="content">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="filterKijijiAlerts" id="filterKijijiAlerts" value="1">
+              <span>Hide Kijiji Alert Subscription Links</span>
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="filterKijijiThirdParty" id="filterKijijiThirdParty" value="1">
+              <span>Hide Third-Party Ad Listings</span>
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="filterKijijiTopAds" id="filterKijijiTopAds" value="1">
+              <span>Hide Top Ad Listings</span>
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="enableKijijiInfinityScroll" id="enableKijijiInfinityScroll" value="1">
+              <span>Enable Infinity Scroll</span>
+            </label>
+          </div>
+          <!--
+          <div class="radio">
+            <label>
+              <input type="radio" name="enableKijijiInfinityScroll" id="enableKijijiInfinityScroll" value="1">
+              <span>Enable Infinity Scroll</span>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="enableKijijiInfinityScroll" id="enableKijijiInfinityScroll" value="0">
+              <span>Enable Location Mapping</span>
+            </label>
+          </div>
+          -->
+        </div>
+        
+        <header>
+          <h1><small>Ad Details Enhancements <em id="status" style="color: #83b54f;">&nbsp;</em></small></h1>
+        </header>
+        <div class="content">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="filterKijijiSocialLinks" id="filterKijijiSocialLinks" value="1">
+              <span>Hide Social Sharing Links</span>
+            </label>
+          </div>
+          <div class="checkbox">
+            <label disabled="disabled">
+              <input type="checkbox" name="enableKijijiCaptchaSolver" id="enableKijijiCaptchaSolver" value="1">
+              <span>Enable Captcha Solver</span>
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="enableKijijiImageRotate" id="enableKijijiImageRotate" value="1">
+              <span>Enable Image Rotate</span>
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="enableKijijiMapPreview" id="enableKijijiMapPreview" value="1">
+              <span>Enable In-line Map Preview</span>
+            </label>
+          </div>
+          <div style="margin: 10px 0;">
+            <span>Map Zoom Level <input style="width: auto;" type="number" name="mapZoomLevel" id="mapZoomLevel" placeholder="The zoom level" min="1" max="18" /></span>
+          </div>
+        </div>
+
+        <header>
+          <h1><small>Form Fill Enhancements <em id="status" style="color: #83b54f;">&nbsp;</em></small></h1>
+        </header>
+        <div class="content">
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="enableKijijiContactPoster" id="enableKijijiContactPoster" value="1">
+              <span>Enable Contact Poster Form-Fill</span>
+            </label>
+          </div>
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="userEmail">Email</label>  
+            <div class="col-md-4">
+            <input id="userEmail" name="userEmail" type="text" placeholder="Your Email" class="form-control input-md">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="userName">Name</label>  
+            <div class="col-md-4">
+            <input id="userName" name="userName" type="text" placeholder="Your Name" class="form-control input-md">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="userPhone">Phone</label>  
+            <div class="col-md-4">
+            <input id="userPhone" name="userPhone" type="text" placeholder="Your Phone" class="form-control input-md">
+            </div>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="userCopyMe" id="userCopyMe" value="1">
+              <span>Send me a copy of email</span>
+            </label>
+          </div>         
+        </div>
+      </div>
+
+      <div id="about">
+        <header>
+          <h1>About</h1>
+        </header>
+        <div class="content">
+          <section>
+            <div id="about-container">
+              <img id="product-logo" src="icons/icon32.png" alt="Kijiji+ Site Enhancer Logo">
+              <div id="product-description">
+                <h2 i18n-content="aboutProductTitle">Kijiji+ Site Enhancer</h2>
+                <p i18n-content="aboutProductDescription">Best browsing experience for Kijiji ever!</p>
+              </div>
+            </div>
+          </section>
+          <section>
+            <p>Get ready to break-out into a happy dance once you start using Kijiji+ Site Enhancer.</p>
+            <style>
+.chrome-bootstrap li {
+  list-style-type: circle;
+}            </style>
+            <ul>
+              <li>4X speed boost to Kijiji.ca by blocking those annoying ads.</li>
+              <li>Protect your privacy with built-in tracking script disabler.</li>
+              <li>Use the enhanced image rotator to twist the picture not your neck.</li>
+              <li>Read pages much easier with the sweet new style updates.</li>
+              <li>Simplified site navigation with <em>BIG shiny buttons</em> instead of teeny tiny text links.</li>
+              <li>New zen like page layouts provide less distraction while browsing.</li>
+              <li>Need directions? The in-page map preview links directly to Google Maps driving directions.</li>
+              <li>Infinity-scrolling of the search results means you never have to click [Next Page] again!</li>
+              <li>Built-in Captcha solver is 95% effective at decoding those messed up pictures.</li>
+              <li>Pre-built response messages because I got tired of always typing "Is it still available?".</li>
+              <li>Avoid retyping your contact info over and over with the [Contact Poster] form fill feature.</li>
+            </ul>
+            <p>So many enhancements in such a tiny extension.</p>
+          </section>
+          <section>
+            <table>
+              <tbody>
+                <tr>
+                  <td><a href="https://github.com/twindual/kijiji-plus" style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px;" target="_blank"><img src="https://github.com/fluidicon.png" alt="GitHub Icon" style="width: 32px; height: 32px; margin: 0px;" /></a></td>
+                  <td><a href="https://github.com/twindual/kijiji-plus" style="margin-top:0px; margin-bottom:0px; padding-top:0px; padding-bottom:0px;" target="_blank">View on GitHub</a></div></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/options.js"></script>
+</body>
+</html>
+
