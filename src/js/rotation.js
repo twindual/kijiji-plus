@@ -23,6 +23,20 @@ function insertRotationButtons() {
       }
     });
 
+    // Add click handler for all the image gallery photo preview images.
+    $('ul.photo-navigation li').each(function(index) {
+      console.log('found image: ', index);
+      $( this ).on("click", function(event) {
+        // Kijiji Image Gallery removes the [Rotate Image] button on image navigation because it is attached to
+        // the image display element which is generated dynamically on Image Gallery navigation navigation.
+        // This means we need to recreate it every time the view a different image in the gallery.
+        if ($('#btnRotateImage').length < 1) {
+          $('.mfp-figure').after('<div id="divImageRotate"><button id="btnRotateImage" class="button-open">Rotate Image</button></div>');
+          $('div.mfp-figure > figure > img.mfp-img').attr('data-rotation', 0);
+        }
+      });
+    });
+
     $(document).on('click', '#btnRotateImage', rotateImageKijiji);  // Register the event handler.
     $('#ImageLightBoxLink').attr('rotateEventRegistered', true); // Don't duplicate the event registration.
 
