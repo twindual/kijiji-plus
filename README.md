@@ -19,7 +19,7 @@
 
 ## Installation
 
-Go to the [chrome web store](https://chrome.google.com/webstore/detail/kijiji-plus/) and click the **✚ Free** button.
+Go to the [chrome web store](https://chrome.google.com/webstore/detail/kijiji%2B-site-enhancer/kpfebcgmdeieiiihpplnljjldclfkflj) and click the **✚ Free** button.
 
 ## Usage
 
