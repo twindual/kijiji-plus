@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Kijiji+ Site Enhancer",
   "version": "1.0.0",
-  "description": "Best browsing experience for Kijiji ever! Image rotation, ad-blocking, privacy protection, infinity-scrolling, in-page map preview and more.",
+  "description": "Enhance your Kijiji browsing with image rotation, CAPTCHA solver, infinite-scroll, ad-blocking, and much more!",
   "author": "André Fortin",
   "default_locale": "en",
   "permissions": [
@@ -21,7 +21,7 @@
     "128": "icons/icon128.png"
   },
   "background": {
-    "scripts": ["js/background.js"]
+    "page": "background.html"
   },
   "browser_action": {
     "default_icon": "icons/icon32.png"
@@ -36,7 +36,7 @@
       "run_at": "document_end",
       "matches": ["*://www.kijiji.ca/*"],
       "js": [
-        "js/jquery-3.1.1.min.js", // Need to load this before bootstrap.min.js
+        "js/jquery-3.1.1.min.js",
         "js/bootstrap.min.js",
         "js/jquery.infinitescroll-2.2.1.js",
         "js/captcha-solver.js",
@@ -52,6 +52,7 @@
     }
   ],
   "options_page": "options.html",
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
   "web_accessible_resources": [
     "kijiji/js/filter.js",
     "kijiji/css/style.css",

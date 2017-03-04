@@ -39,36 +39,7 @@ function doInCurrentTab(tabCallback) {
         console.log(tabArray[0]);
       return tabArray[0];
     }
-
-        
-/*
-        console.log("--- tabArray[0] ---");
-        console.log(tabArray[0]);
-
-        // ToDo: should parse out the domain and compare on that.
-        if (tabArray[0].url.indexOf('http://www.kijiji.ca/') === 0 || tabArray[0].url.indexOf('https://www.kijiji.ca/') === 0) {
-          console.log("--- found Kijiji.ca ---");
-          for (index = 0; index < filterDomains.length; index++) {
-            var filter = filterDomains[index].replace(/\//g, "\\/");
-            filter = filter.replace(/\x2e/g, "\\.");
-            filter = filter.replace(/\x2a/g, ".");
-            //console.log(filter);
-            var patt = new RegExp(filter);
-            var res = patt.test(info.url);
-            if (res) {
-              console.log("!!! found Ad Network !!!");
-              return {cancel: true};
-            }
-          }
-          console.log("NOT an AD NETWORK == " + info.url);
-        }
-
-        console.log("END -- chrome.tabs.query()");
-        return {cancel: false};
-      }
-    );
-*/
-    );
+  );
 
   return result;
 }

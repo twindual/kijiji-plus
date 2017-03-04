@@ -4,7 +4,7 @@
 
 ### [Kijiji.ca](http://www.kijiji.ca)
 
-- 4x Speed increase by blocking anoying ads and tracking scripts
+- 4x Speed increase by blocking annoying ads and tracking scripts
 - Zen mode page layout removes distractions
 - Infinite Scroll in Ad search results
 - Add image rotation to Ad Details image gallery
@@ -13,7 +13,7 @@
 - Increased font sizes make some elements more readable
 - 1-Click common response messages just like in the mobile app
 - Auto-fill contact information when replying to poster
-- 95% accurate Captcha solver for [Reply to Poster] form
+- 95% accurate CAPTHCA solver for [Reply to Poster] form
 - Add in-page Google Map preview to Ad Details
 - In-page Google Map preview links to driving directions
 

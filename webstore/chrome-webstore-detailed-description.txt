@@ -1,0 +1,16 @@
+Get ready to break-out into a happy dance once you start using Kijiji+ Site Enhancer.
+
+- 4x Speed increase by blocking annoying ads and tracking scripts
+- Zen mode page layout removes distractions
+- Infinite Scroll in Ad search results
+- Add image rotation to Ad Details image gallery
+- Add BIG shiny button instead of text links for Navigation
+- New [Post to Category] button instead of tiny text link
+- Increased font sizes make some elements more readable
+- 1-Click common response messages just like in the mobile app
+- Auto-fill contact information when replying to poster
+- 95% accurate CAPTCHA solver for [Reply to Poster] form
+- Add in-page Google Map preview to Ad Details
+- In-page Google Map preview links to driving directions
+
+So many enhancements in such a tiny extension.

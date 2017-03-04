@@ -66,15 +66,6 @@
             currPage: 1
         },
 
-// ===========================================================================
-        // jQuery selectors.
-        //navSelector: 'a [title="Next"]',
-        //nextSelector: 'div.navigation a:first',
-        //itemSelector: 'div [data-ad-id]',
-        //contentSelector: undefined,      // rename to pageFragment
-        //binder: $(window),          // Cache reference to selector.
-// ===========================================================================
-
         errorCallback: undefined,   // Callback function
         
         // jQuery selectors.
@@ -82,7 +73,7 @@
         navSelector: 'div.pagination',
         nextSelector: 'div a[title="Next"]',
         itemSelector: 'div [data-ad-id]',
-        contentSelector: undefined,      // Rename to pageFragment. 'page fragment' option for .load() / .ajax() calls.
+        contentSelector: undefined, // Rename to pageFragment. 'page fragment' option for .load() / .ajax() calls.
         binder: $(window),          // Cache reference to selector.
 
         // Positioning params.
@@ -91,7 +82,6 @@
         extraScrollPx: 150,         // Add extra height when smooth scrolling in new content.
         pixelsFromNavToBottom: undefined,   // Used when calculating trigger for next page load.
         prefill: false,             // IF the document is smaller than the window THEN load data until the document is larger OR links are exhausted.
-
 
         // Result page number params.
         path: undefined,            // Either parts of a URL as an array (e.g. ["/page/", "/"] or a function that takes the page number and returns a URL.
@@ -110,7 +100,6 @@
         behavior: undefined,        // Deprecated, use function over-rides. Used to overide default behaviour of existing functionality.
 
         // DEPRECATED User defined callback functions.
-        //callback: undefined,        // Deprecated, use onUpdate.
         errorCallback: undefined,   // Deprecated, use onComplete.
 
         // User defined callback functions.
@@ -141,12 +130,8 @@
         }
     };
 
-
-// ===========================================================================
-
-
-
     $.infinitescroll.prototype = {
+
 
         /*
         ----------------------------
@@ -552,8 +537,6 @@
                         data = children.get();
                     }
                     break;
-
-                default:
             }
 
             // ToDo: This should really be in its own function.
@@ -716,13 +699,6 @@
             this._pausing('resume');
         },
 
-// =================================================================================
-
-// =================================================================================
-
-// =================================================================================
-
-
         // Fetch a page via AJAX.
         beginAjax: function infscr_ajax(opts) {
             var instance = this;
@@ -829,16 +805,8 @@
                         }
                     });
                     break;
-                
-                default:
             }
         },
-
-// =================================================================================
-
-// =================================================================================
-
-// =================================================================================
 
         // Retrieve the next set of content items.
         retrieve: function infscr_retrieve(pageNum = null) {
@@ -894,7 +862,6 @@
 
             this.retrieve();
         },
-
 
         // Toggle pause value.
         toggle: function infscr_toggle() {
@@ -981,8 +948,6 @@
                     }
                 });
                 break;
-            
-            default:
         }
 
         return this;
